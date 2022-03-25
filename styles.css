@@ -1,0 +1,135 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+footer {
+  background-color: #8b124b;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #8b124b;
+}
+.nav-item {
+  padding-right: 40px;
+}
+
+/* Carousel */
+
+.carousel-inner {
+  margin-top: -1em;
+}
+.carousel-item {
+  height: 650px;
+}
+
+#contact-btn {
+  background-color: #8b124b;
+  color: white;
+}
+
+/* About */
+
+.about {
+  padding: 6em 1em;
+}
+.about-me p {
+  font-size: 16px;
+}
+
+#intermite h1 {
+  color: #8b124b;
+  font-size: 50px;
+}
+
+/* Branch */
+#intermite {
+  color: #8b124b;
+}
+
+#surabaya {
+  height: 300px;
+}
+
+#bali {
+  height: 300px;
+}
+#branch {
+  padding: 8em 1em;
+}
+
+/* Why */
+#why {
+  padding: 8em 2em;
+  margin-bottom: 200px;
+}
+
+.kenapa {
+  height: 200px;
+  width: 400px;
+}
+
+.why-jelas {
+  margin-top: 2em;
+  color: #8b124b;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Contact */
+#contact {
+  padding: 8em 1em;
+}
+
+.kirim {
+  background-color: #8b124b;
+  color: white;
+}
+
+/* Breadcrumb */
+
+section.breadcrumb-area {
+  padding-top: 76px;
+  background-color: #f4f4f4;
+  height: 300px;
+}
+
+.my-breadcumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 224px;
+}
+
+.judul-about {
+  padding-left: 15px;
+  color: #8b124b;
+}
+
+.breadcrumb > .active {
+  color: #8b124b;
+}
+
+/* Footer*/
+
+.footer-info {
+  color: #efedf3;
+  text-decoration: none;
+}
+
+.footer-info a {
+  color: #efedf3;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff007b;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Contact */
+
+.judul-contact {
+  padding-left: 4px;
+  color: #8b124b;
+}
