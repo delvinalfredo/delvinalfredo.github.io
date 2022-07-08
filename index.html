@@ -1,258 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intermite</title>
-    <link rel="stylesheet" href="./bootstrap-5.1.3-dist/js/bootstrap.min.js">
-    <link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.1.3-dist/js/bootstrap.min.js" />
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.1.3-dist/css/bootstrap.min.css"
+    />
     <script src="./bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <script src="ext.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header area">
-        <div class="container-sm">
-            <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
-                <div class="container-sm">
-                    <a class="navbar-brand" href="./index.html"><img src="./images/logo.png" style="height: 50px;" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contact.html">Contact</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Services
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#" onclick="service()">Termite Control</a></li>
-                                    <li><a class="dropdown-item" href="#" onclick="service()">Pest Control</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+      <div class="container-sm">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+          <div class="container-sm">
+            <a class="navbar-brand" href="./index.html"
+              ><img src="./images/logo.png" style="height: 50px;" alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Services
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="#" onclick="service()"
+                        >Termite Control</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" onclick="service()"
+                        >Pest Control</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="navbar-brand"
+                    href="https://instagram.com/intermite.termitecontrol?igshid=YmMyMTA2M2y="
+                    target="_blank"
+                  >
+                    <img
+                      src="./images/ig.png"
+                      style="height: 20px; margin-top: 1vh;"
+                      alt="ig"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active ">
-                <img src="./images/control1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./images/control2.jpg" class="d-block w-100" alt="...">
-            </div>
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/control1.jpg" class="d-block w-100" alt="..." />
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item">
+          <img src="./images/control2.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
     <section class="about">
-        <div class="container-sm">
-            <br>
-            <div class="row">
-                <div class="col-sm-6 text-center">
-                    <div class="col text-center" id="intermite">
-                        <h1 onclick="changeText(this)">intermite</h1>
-                    </div>
-                    <div class="about-me pt-4">
-                        <p> <b>Intermite</b> adalah salah satu perusahaan jasa pengendali hama lokal bebasis di Pulau
-                            Bali.
-                            Menawarkan produk pelayanan jasa anti rayap yang terintegritas, prinsipal, berkualitas
-                            dan juga bergaransi disertai pelayanan dari teknisi yang berwawasan luas, terlatih, handal,
-                            ramah, komunikatif, kooperatif
-                            dan berpengalaman juga respon cepat dapat memberikan kenyamanan dan kepuasan yang selama ini
-                            dialami oleh setiap pelanggan kami.</p>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="d-flex justify-content-center">
-                        <img class="intro w-50" src="./images/introduction.jpg" alt="intro">
-                    </div>
-                </div>
+      <div class="container-sm">
+        <br />
+        <div class="row">
+          <div class="col-sm-6 text-center">
+            <div class="col text-center" id="intermite">
+              <h1 onclick="changeText(this)">intermite</h1>
             </div>
+            <div class="about-me pt-4">
+              <p>
+                <b>Intermite</b> adalah salah satu perusahaan jasa pengendali
+                hama lokal bebasis di Pulau Bali. Menawarkan produk pelayanan
+                jasa anti rayap yang terintegritas, prinsipal, berkualitas dan
+                juga bergaransi disertai pelayanan dari teknisi yang berwawasan
+                luas, terlatih, handal, ramah, komunikatif, kooperatif dan
+                berpengalaman juga respon cepat dapat memberikan kenyamanan dan
+                kepuasan yang selama ini dialami oleh setiap pelanggan kami.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex justify-content-center">
+              <img
+                class="intro w-50"
+                src="./images/introduction.jpg"
+                alt="intro"
+              />
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="branch" class="bg-light pb-5">
-        <div class="container-sm">
-            <div class="col text-center mb-5" id="intermite">
-                <h2>Our Branch</h2>
-            </div>
-
-            <div class="row mb-4">
-                <div class="col-sm-6">
-                    <div class="card d-block w-100 text-center">
-                        <img src="./images/surabaya.jpg" class="card-img-top" alt="..." id="surabaya">
-                        <div class="card-body">
-                            <h5 class="card-title">Surabaya</h5>
-                            <p class="card-text">Surabaya merupakan salah satu awal dari terbentuknya intermite</p>
-                            <a href="#" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#surabaya-modal">Selengkapnya</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="card d-block w-100 text-center">
-                        <img src="./images/bali.jpg" class="card-img-top" alt="..." id="bali">
-                        <div class="card-body">
-                            <h5 class="card-title">Bali</h5>
-                            <p class="card-text">Bali merupakan salah satu cabang dari intermites yang baru</p>
-                            <a href="#" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#bali-modal">Selengkapnya</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container-sm">
+        <div class="col text-center mb-5" id="intermite">
+          <h2>Our Branch</h2>
         </div>
+
+        <div class="row mb-4">
+          <div class="col-sm-6">
+            <div class="card d-block w-100 text-center">
+              <img
+                src="./images/surabaya.jpg"
+                class="card-img-top"
+                alt="..."
+                id="surabaya"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Surabaya</h5>
+                <p class="card-text">
+                  Surabaya merupakan salah satu awal dari terbentuknya intermite
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#surabaya-modal"
+                  >Selengkapnya</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card d-block w-100 text-center">
+              <img
+                src="./images/bali.jpg"
+                class="card-img-top"
+                alt="..."
+                id="bali"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bali</h5>
+                <p class="card-text">
+                  Bali merupakan salah satu cabang dari intermites yang baru
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#bali-modal"
+                  >Selengkapnya</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <div class="modal fade" id="surabaya-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Selengkapnya</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="./images/surabaya.jpg" width="100%" alt="">
-                </div>
-                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellendus
-                    similique cupiditate.
-                    Eos, consectetur. Minus expedita dicta sapiente, voluptatem necessitatibus corporis fuga fugiat
-                    deserunt obcaecati
-                    ad corrupti error quod architecto!</p>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
+    <div
+      class="modal fade"
+      id="surabaya-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Selengkapnya</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="./images/surabaya.jpg" width="100%" alt="" />
+          </div>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            repellendus similique cupiditate. Eos, consectetur. Minus expedita
+            dicta sapiente, voluptatem necessitatibus corporis fuga fugiat
+            deserunt obcaecati ad corrupti error quod architecto!
+          </p>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
         </div>
+      </div>
     </div>
 
-    <div class="modal fade" id="bali-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Selengkapnya</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="./images/bali.jpg" width="100%" alt="">
-                </div>
-                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellendus
-                    similique cupiditate.
-                    Eos, consectetur. Minus expedita dicta sapiente, voluptatem necessitatibus corporis fuga fugiat
-                    deserunt obcaecati
-                    ad corrupti error quod architecto!</p>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
+    <div
+      class="modal fade"
+      id="bali-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Selengkapnya</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="./images/bali.jpg" width="100%" alt="" />
+          </div>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            repellendus similique cupiditate. Eos, consectetur. Minus expedita
+            dicta sapiente, voluptatem necessitatibus corporis fuga fugiat
+            deserunt obcaecati ad corrupti error quod architecto!
+          </p>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
         </div>
+      </div>
     </div>
 
-    <br>
+    <br />
 
     <section id="why" class="pb-5">
-        <div class="container-sm">
-            <div class="col text-center mb-5" id="intermite">
-                <h2>Why Intermite?</h2>
-            </div>
-            <div class="row mb-4">
-                <div class="col-sm-4">
-                    <img src="./images/termites2.jpg" class="rounded kenapa" alt="..." id="why1">
-                    <div class="why-jelas">
-                        <p class="text-center">Aman</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <img src="./images/termites3.jpg" class="rounded kenapa" alt="..." id="why2">
-                    <div class="why-jelas">
-                        <p class="text-center">Teliti</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <img src="./images/termites1.jpeg" class="rounded kenapa" alt="..." id="why3">
-                    <div class="why-jelas">
-                        <p class="text-center">Bersih</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container-sm">
+        <div class="col text-center mb-5" id="intermite">
+          <h2>Why Intermite?</h2>
         </div>
+        <div class="row mb-4">
+          <div class="col-sm-4">
+            <img
+              src="./images/termites2.jpg"
+              class="rounded kenapa"
+              alt="..."
+              id="why1"
+            />
+            <div class="why-jelas">
+              <p class="text-center">Aman</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <img
+              src="./images/termites3.jpg"
+              class="rounded kenapa"
+              alt="..."
+              id="why2"
+            />
+            <div class="why-jelas">
+              <p class="text-center">Teliti</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <img
+              src="./images/termites1.jpeg"
+              class="rounded kenapa"
+              alt="..."
+              id="why3"
+            />
+            <div class="why-jelas">
+              <p class="text-center">Bersih</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer>
-        <div class="footer-info container-sm">
-            <div class="row">
-                <div class="col-sm-4 pt-5">
-                    <a class="navbar-brand" href="#"><img src="./images/logo.png" style="height: 80px;" alt=""></a>
-                </div>
-                <div class="col-sm pt-5">
-                    <ul class="list-unstyled nav-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm pt-5">
-                    <ul class="list-unstyled nav-links">
-                        <li><a href="#">Clients</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Career</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Journal</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm pt-5">
-                    <ul class="list-unstyled nav-links">
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms &amp; Conditions</a></li>
-                        <li><a href="#">Partners</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row ">
-                <div class="col-12 text-center">
-                    <div class="copyright mt-2 pt-5">
-                        <p><small>&copy; 2021 All Rights Reserved.</small></p>
-                    </div>
-                </div>
-            </div>
+      <div class="footer-info container-sm">
+        <div class="row">
+          <div class="col-sm-4 pt-5">
+            <a class="navbar-brand" href="#"
+              ><img src="./images/logo.png" style="height: 80px;" alt=""
+            /></a>
+          </div>
+          <div class="col-sm pt-5">
+            <ul class="list-unstyled nav-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-sm pt-5">
+            <ul class="list-unstyled nav-links">
+              <li><a href="#">Clients</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Journal</a></li>
+            </ul>
+          </div>
+          <div class="col-sm pt-5">
+            <ul class="list-unstyled nav-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms &amp; Conditions</a></li>
+              <li><a href="#">Partners</a></li>
+            </ul>
+          </div>
         </div>
+
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="copyright mt-2 pt-5">
+              <p><small>&copy; 2021 All Rights Reserved.</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>
